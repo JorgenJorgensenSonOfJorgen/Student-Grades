@@ -64,7 +64,7 @@ function firstTo40() {
   // Set the grade of the first student to 40.
   outputEl.innerHTML = "First grade to 40";
   //if there are no grades dont do anything
-  if (grades[0] == !"undefined") {
+  if (String(grades[0]) != "undefined"){
     grades[0] = 40
   }
 }
@@ -79,7 +79,7 @@ function randomTo100() {
   // Set the grade of a random student to 100.
   outputEl.innerHTML = "Random grade to 100";
   //if there are no grades dont do anything
-  if (grades[0] == !"undefined") {
+  if (String(grades[0]) != "undefined") {
     grades[Math.floor(Math.random() * grades.length)] = 100
   }
 }
